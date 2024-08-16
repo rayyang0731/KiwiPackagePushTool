@@ -1,2 +1,2 @@
-# KiwiPackagePushTool
-Package 推送工具
+# KiwiPackageTool
+Package 工具
