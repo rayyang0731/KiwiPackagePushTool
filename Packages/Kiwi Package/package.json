@@ -1,0 +1,7 @@
+{
+  "name": "com.kiwi.package",
+  "author": "Kiwi",
+  "displayName": "Kiwi Package Tool",
+  "version": "1.0.0",
+  "description": "Package 工具"
+}
