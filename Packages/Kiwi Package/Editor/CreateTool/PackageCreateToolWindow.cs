@@ -9,7 +9,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Kiwi.Editor.Package
+namespace Kiwi.Package.Editor
 {
 	/// <summary>
 	/// Package 创建工具窗口
@@ -43,7 +43,11 @@ namespace Kiwi.Editor.Package
 	/// </remarks>
 	public class PackageCreateToolWindow : EditorWindow
 	{
-		[ MenuItem("Window/Kiwi/Package 创建工具") ]
+#if USE_KIWI_UTILITY
+		[ EditorToolbar(EditorToolbarAttribute.Anchor.Right , "Kiwi" , "Package/Package 创建工具") ]
+#else
+		[ MenuItem("Kiwi/Packages/Package 创建工具") ]
+#endif
 		private static void Open()
 		{
 			var window = CreateWindow<PackageCreateToolWindow>("Package 创建工具");

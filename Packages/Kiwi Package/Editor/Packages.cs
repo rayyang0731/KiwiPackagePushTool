@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Kiwi.Editor.Package
+namespace Kiwi.Package.Editor
 {
 	/// <summary>
 	/// Package 工具辅助代码

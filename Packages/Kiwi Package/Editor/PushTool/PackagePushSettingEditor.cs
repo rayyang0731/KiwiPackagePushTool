@@ -10,7 +10,7 @@ using UnityEngine;
 
 using Debug = UnityEngine.Debug;
 
-namespace Kiwi.Editor.Package
+namespace Kiwi.Package.Editor
 {
 	[ CustomEditor(typeof(PackagePushSetting)) ]
 	public class PackagePushSettingEditor : UnityEditor.Editor

@@ -1,6 +1,6 @@
 {
     "name": "Kiwi.Package.Editor",
-    "rootNamespace": "Kiwi.Editor.Package",
+    "rootNamespace": "Kiwi.Package.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
