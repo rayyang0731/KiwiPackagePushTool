@@ -179,6 +179,21 @@ namespace Kiwi.Package.Editor
 				return;
 			}
 
+			if (RunGitCommand($"add ." , repoRoot))
+			{
+				Debug.Log("添加要提交的文件成功.");
+			}
+
+			if (RunGitCommand($"commit -m \"Auto Update Files And Version.\"" , repoRoot))
+			{
+				Debug.Log("提交更新文件和版本号.");
+			}
+
+			if (RunGitCommand($"push origin main" , repoRoot))
+			{
+				Debug.Log("推送 main 分支, 更新版本号成功.");
+			}
+
 			// 1. 拆分指定目录的提交内容到 upm 分支
 			if (RunGitCommand($"subtree split --prefix=\"{relativelyRepoPath}\" --branch upm" , repoRoot))
 			{
